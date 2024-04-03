@@ -47,6 +47,15 @@ This script automates the installation of Jenkins, Nexus, and SonarQube on a sin
 
 Containers will stop whenever the instance is stopped. You can use the `start_containers.sh` script provided in this repository to start both containers again when you start your instance.
 
+To access the shell of your container, please run the command `docker exec -it "name of container" bash`
+
+You can get the name of your container by running `docker ps` 
+
+### If you run into permission issues, do the following:
+- Run the command `sudo usermod -aG docker ${USER}` 
+- Run `sudo su ubuntu` 
+- Try again 
+
 ## Access URLs
 
 After the installation is complete, you can access the following URLs to use the newly installed tools:
