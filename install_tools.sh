@@ -20,7 +20,7 @@ sudo apt-get update
 sudo apt-get install jenkins -y
 
 sudo ufw allow 22,8080,8081,9000/tcp
-sudo ufw ufw --force enable
+sudo ufw --force enable
 sudo ufw reload 
 
 echo "Installation is complete, you can access the following URLs to use the newly installed tools:"
